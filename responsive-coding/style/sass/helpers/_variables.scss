@@ -1,0 +1,49 @@
+//
+//#################################################
+// Variables for things like min / max width, line-height, font-sizes, colors, media-queries, etc
+//#################################################
+//
+
+/* Variables for fonts */
+$font-primary: Helvetica, Arial, sans-serif;
+
+/* Variables for colors */
+$color-bodybg: #F8F8F8;
+$color-primary: #333333;
+$color-secondary: #AAAAAA;
+
+/* Grid System */
+$gutter: 2%;
+
+/* Variables for responsive nav */
+$secondary-size: 100px;
+
+/* Variables for breakpoints */
+$break-sm: 576px;
+$break-md: 768px;
+$break-lg: 992px;
+$break-xl: 1260px;
+
+@mixin break-sm {
+  @media screen and (min-width: $break-sm) {
+    @content;
+  }
+}
+
+@mixin break-md {
+  @media screen and (min-width: $break-md) {
+    @content;
+  }
+}
+
+@mixin break-lg {
+  @media screen and (min-width: $break-lg) {
+    @content;
+  }
+}
+
+@mixin break-xl {
+  @media screen and (min-width: $break-xl) {
+    @content;
+  }
+}

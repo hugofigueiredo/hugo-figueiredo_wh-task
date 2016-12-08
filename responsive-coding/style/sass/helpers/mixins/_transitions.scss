@@ -1,0 +1,47 @@
+$translate: true !default;
+$transition: true !default;
+$transform: true !default;
+$transform-origin: true !default;
+// ============================================================================
+// Transitions
+// ============================================================================
+
+@mixin translate($props) {
+  @if $translate == true {
+    -webkit-transform: $props;
+    -moz-transform: $props;
+    -ms-transform: $props;
+    -o-transform: $props;
+    transform: $props;
+  }
+}
+
+@mixin transition($props) {
+  @if $transition == true {
+    -webkit-transition: $props;
+    -moz-transition: $props;
+    -ms-transition: $props;
+    -o-transition: $props;
+    transition: $props;
+  }
+}
+
+@mixin transform($props) {
+  @if $transition == true {
+    -webkit-transition: -webkit-transform $props;
+    -moz-transition: -moz-transform $props;
+    -ms-transition: -ms-transform $props;
+    -o-transition: -o-transform $props;
+    transition: transform $props;
+  }
+}
+
+@mixin transform-origin($props) {
+  @if $transition == true {
+    -webkit-transform-origin:  $props;
+    -moz-transform-origin: $props;
+    -ms-transform-origin: $props;
+    -o-transform-origin: $props;
+    transform-origin: $props;
+  }
+}

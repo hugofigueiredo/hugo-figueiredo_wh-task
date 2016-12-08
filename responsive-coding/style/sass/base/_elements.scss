@@ -1,0 +1,23 @@
+/*
+#################################################
+ Elements
+#################################################
+*/
+
+
+a {
+  color: $color-primary;
+	text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    color: $color-primary;
+		text-decoration: none;
+  }
+}
+
+img {
+	max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: bottom;
+}
